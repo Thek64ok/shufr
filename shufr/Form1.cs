@@ -15,11 +15,14 @@ namespace shufr
     {
         //нужно для возврата назад и вперед, в первую записываем результат, второе для контроля назад и вперед
         List<string> textFor = new List<string>();
+        List<string> historyLetters = new List<string>();
+
         int iterator = 0;
 
         public Form1()
         {
             InitializeComponent();
+            historyLetters.Add("");
         }
 
         private void testButton_Click(object sender, EventArgs e)
@@ -43,7 +46,7 @@ namespace shufr
 
                 var fileStream = openFile.OpenFile();
 
-                StreamReader reader = new StreamReader(fileStream, Encoding.UTF8);
+                StreamReader reader = new StreamReader(fileStream, Encoding.GetEncoding(1251));
 
                 fileContent = reader.ReadToEnd().ToLower();
 
@@ -125,6 +128,11 @@ namespace shufr
             if (iterator >= 0)
             {
                 textOfUniq.Text = textFor[iterator];
+                textHistory.Clear();
+                for (int i = 0; i <= iterator; i++)
+                {
+                    textHistory.Text += historyLetters[i];
+                }
                 updateRadio();
             }
             else
@@ -137,6 +145,11 @@ namespace shufr
             if (iterator < textFor.Count && textFor.Count != 0)
             {
                 textOfUniq.Text = textFor[iterator];
+                textHistory.Clear();
+                for (int i = 0; i <= iterator; i++)
+                {
+                    textHistory.Text += historyLetters[i];
+                }
                 updateRadio();
             }
             else
@@ -235,6 +248,8 @@ namespace shufr
                 string textChange = textOfUniq.Text;
                 textOfUniq.Text = textChange.Replace(toChange, whatChange);
                 textFor.Add(textOfUniq.Text);
+                historyLetters.Add(toChange + " -> " + whatChange + Environment.NewLine);
+                textHistory.Text += toChange+ " -> " + whatChange + Environment.NewLine;
                 iterator++;
                 updateRadio();
             }
@@ -266,9 +281,10 @@ namespace shufr
             }   
             if (pathToFile.EndsWith(".txt"))
             {
-                StreamReader reader = new StreamReader(pathToFile, System.Text.Encoding.GetEncoding(1251));
+                StreamReader reader = new StreamReader(pathToFile, Encoding.GetEncoding(1251));
                 string fileContent = reader.ReadToEnd().ToLower();
                 textOfUniq.Text = fileContent;
+                textFor.Add(fileContent);
                 updateRadio();
                 reader.Close();
             }

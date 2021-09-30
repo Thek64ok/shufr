@@ -45,6 +45,8 @@ namespace shufr
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton33 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton32 = new System.Windows.Forms.RadioButton();
             this.radioButton31 = new System.Windows.Forms.RadioButton();
             this.radioButton30 = new System.Windows.Forms.RadioButton();
@@ -69,7 +71,6 @@ namespace shufr
             this.radioButton11 = new System.Windows.Forms.RadioButton();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
@@ -78,7 +79,7 @@ namespace shufr
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.textOfUniq = new System.Windows.Forms.TextBox();
-            this.radioButton33 = new System.Windows.Forms.RadioButton();
+            this.textHistory = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -108,7 +109,7 @@ namespace shufr
             this.About});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1001, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1094, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -252,6 +253,28 @@ namespace shufr
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Частые символы алфавита";
+            // 
+            // radioButton33
+            // 
+            this.radioButton33.AutoSize = true;
+            this.radioButton33.Location = new System.Drawing.Point(208, 28);
+            this.radioButton33.Name = "radioButton33";
+            this.radioButton33.Size = new System.Drawing.Size(71, 25);
+            this.radioButton33.TabIndex = 0;
+            this.radioButton33.TabStop = true;
+            this.radioButton33.Text = "- 0,17";
+            this.radioButton33.UseVisualStyleBackColor = true;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(107, 168);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(93, 25);
+            this.radioButton8.TabIndex = 7;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "е - 0,017";
+            this.radioButton8.UseVisualStyleBackColor = true;
             // 
             // radioButton32
             // 
@@ -517,17 +540,6 @@ namespace shufr
             this.radioButton9.Text = "р - 0,047";
             this.radioButton9.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(107, 168);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(93, 25);
-            this.radioButton8.TabIndex = 7;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "е - 0,017";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
             // radioButton7
             // 
             this.radioButton7.AutoSize = true;
@@ -619,16 +631,16 @@ namespace shufr
             this.textOfUniq.DragEnter += new System.Windows.Forms.DragEventHandler(this.textOfUniq_DragEnter);
             this.textOfUniq.DragLeave += new System.EventHandler(this.textOfUniq_DragLeave);
             // 
-            // radioButton33
+            // textHistory
             // 
-            this.radioButton33.AutoSize = true;
-            this.radioButton33.Location = new System.Drawing.Point(208, 28);
-            this.radioButton33.Name = "radioButton33";
-            this.radioButton33.Size = new System.Drawing.Size(71, 25);
-            this.radioButton33.TabIndex = 0;
-            this.radioButton33.TabStop = true;
-            this.radioButton33.Text = "- 0,17";
-            this.radioButton33.UseVisualStyleBackColor = true;
+            this.textHistory.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textHistory.Location = new System.Drawing.Point(999, 34);
+            this.textHistory.Multiline = true;
+            this.textHistory.Name = "textHistory";
+            this.textHistory.ReadOnly = true;
+            this.textHistory.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textHistory.Size = new System.Drawing.Size(90, 491);
+            this.textHistory.TabIndex = 4;
             // 
             // Form1
             // 
@@ -636,7 +648,8 @@ namespace shufr
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(1001, 537);
+            this.ClientSize = new System.Drawing.Size(1094, 537);
+            this.Controls.Add(this.textHistory);
             this.Controls.Add(this.textOfUniq);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
@@ -706,6 +719,7 @@ namespace shufr
         private System.Windows.Forms.ToolStripMenuItem About;
         private System.Windows.Forms.ToolStripMenuItem replaceLetter;
         private System.Windows.Forms.RadioButton radioButton33;
+        private System.Windows.Forms.TextBox textHistory;
     }
 }
 
