@@ -268,7 +268,7 @@ namespace shufr
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(107, 168);
+            this.radioButton8.Location = new System.Drawing.Point(107, 140);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(93, 25);
             this.radioButton8.TabIndex = 7;
@@ -301,7 +301,7 @@ namespace shufr
             // radioButton30
             // 
             this.radioButton30.AutoSize = true;
-            this.radioButton30.Location = new System.Drawing.Point(107, 308);
+            this.radioButton30.Location = new System.Drawing.Point(107, 280);
             this.radioButton30.Name = "radioButton30";
             this.radioButton30.Size = new System.Drawing.Size(93, 25);
             this.radioButton30.TabIndex = 29;
@@ -323,7 +323,7 @@ namespace shufr
             // radioButton28
             // 
             this.radioButton28.AutoSize = true;
-            this.radioButton28.Location = new System.Drawing.Point(107, 224);
+            this.radioButton28.Location = new System.Drawing.Point(107, 196);
             this.radioButton28.Name = "radioButton28";
             this.radioButton28.Size = new System.Drawing.Size(99, 25);
             this.radioButton28.TabIndex = 27;
@@ -334,12 +334,12 @@ namespace shufr
             // radioButton27
             // 
             this.radioButton27.AutoSize = true;
-            this.radioButton27.Location = new System.Drawing.Point(107, 112);
+            this.radioButton27.Location = new System.Drawing.Point(107, 336);
             this.radioButton27.Name = "radioButton27";
             this.radioButton27.Size = new System.Drawing.Size(95, 25);
             this.radioButton27.TabIndex = 26;
             this.radioButton27.TabStop = true;
-            this.radioButton27.Text = "ч - 0,018";
+            this.radioButton27.Text = "ц - 0,006";
             this.radioButton27.UseVisualStyleBackColor = true;
             // 
             // radioButton26
@@ -356,7 +356,7 @@ namespace shufr
             // radioButton25
             // 
             this.radioButton25.AutoSize = true;
-            this.radioButton25.Location = new System.Drawing.Point(107, 280);
+            this.radioButton25.Location = new System.Drawing.Point(107, 252);
             this.radioButton25.Name = "radioButton25";
             this.radioButton25.Size = new System.Drawing.Size(98, 25);
             this.radioButton25.TabIndex = 24;
@@ -367,7 +367,7 @@ namespace shufr
             // radioButton24
             // 
             this.radioButton24.AutoSize = true;
-            this.radioButton24.Location = new System.Drawing.Point(107, 252);
+            this.radioButton24.Location = new System.Drawing.Point(107, 224);
             this.radioButton24.Name = "radioButton24";
             this.radioButton24.Size = new System.Drawing.Size(94, 25);
             this.radioButton24.TabIndex = 23;
@@ -378,7 +378,7 @@ namespace shufr
             // radioButton23
             // 
             this.radioButton23.AutoSize = true;
-            this.radioButton23.Location = new System.Drawing.Point(107, 336);
+            this.radioButton23.Location = new System.Drawing.Point(107, 308);
             this.radioButton23.Name = "radioButton23";
             this.radioButton23.Size = new System.Drawing.Size(95, 25);
             this.radioButton23.TabIndex = 22;
@@ -400,7 +400,7 @@ namespace shufr
             // radioButton21
             // 
             this.radioButton21.AutoSize = true;
-            this.radioButton21.Location = new System.Drawing.Point(107, 196);
+            this.radioButton21.Location = new System.Drawing.Point(107, 168);
             this.radioButton21.Name = "radioButton21";
             this.radioButton21.Size = new System.Drawing.Size(93, 25);
             this.radioButton21.TabIndex = 20;
@@ -422,7 +422,7 @@ namespace shufr
             // radioButton19
             // 
             this.radioButton19.AutoSize = true;
-            this.radioButton19.Location = new System.Drawing.Point(107, 140);
+            this.radioButton19.Location = new System.Drawing.Point(107, 112);
             this.radioButton19.Name = "radioButton19";
             this.radioButton19.Size = new System.Drawing.Size(95, 25);
             this.radioButton19.TabIndex = 18;

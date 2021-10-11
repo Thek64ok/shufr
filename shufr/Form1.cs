@@ -46,7 +46,7 @@ namespace shufr
 
                 var fileStream = openFile.OpenFile();
 
-                StreamReader reader = new StreamReader(fileStream, Encoding.GetEncoding(1251));
+                StreamReader reader = new StreamReader(fileStream, Encoding.UTF8);
 
                 fileContent = reader.ReadToEnd().ToLower();
 
