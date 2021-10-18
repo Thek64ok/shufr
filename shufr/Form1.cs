@@ -311,5 +311,10 @@ namespace shufr
         {
             changeFunction();
         }
+
+        private void textOfUniq_TextChanged(object sender, EventArgs e)
+        {
+            updateRadio();
+        }
     }
 }

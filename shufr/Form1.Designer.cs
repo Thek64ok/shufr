@@ -158,7 +158,7 @@ namespace shufr
             // 
             this.clearField.Image = global::shufr.Properties.Resources.clear_;
             this.clearField.Name = "clearField";
-            this.clearField.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.clearField.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
             this.clearField.Size = new System.Drawing.Size(200, 22);
             this.clearField.Text = "Очистить";
             this.clearField.Click += new System.EventHandler(this.clearField_Click);
@@ -624,10 +624,10 @@ namespace shufr
             this.textOfUniq.Location = new System.Drawing.Point(689, 34);
             this.textOfUniq.Multiline = true;
             this.textOfUniq.Name = "textOfUniq";
-            this.textOfUniq.ReadOnly = true;
             this.textOfUniq.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textOfUniq.Size = new System.Drawing.Size(304, 491);
             this.textOfUniq.TabIndex = 0;
+            this.textOfUniq.TextChanged += new System.EventHandler(this.textOfUniq_TextChanged);
             this.textOfUniq.DragEnter += new System.Windows.Forms.DragEventHandler(this.textOfUniq_DragEnter);
             this.textOfUniq.DragLeave += new System.EventHandler(this.textOfUniq_DragLeave);
             // 
